@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="./assets/css/main.css">
   </head>
   <body>
     <section class="homeSection">
@@ -37,10 +37,10 @@
                 {% for image in project.images %}
                   <div class="worksSection__item__wrapGroupImages">
                   {% for groupImg in image.imageGroup %}
-                    <img src="/assets/images/{{ groupImg.src }}" alt="{{ groupImg.alt }}" class="worksSection__item__image">
+                    <img src="./assets/images/{{ groupImg.src }}" alt="{{ groupImg.alt }}" class="worksSection__item__image">
                   {% endfor %}
                   </div>
-                  <img src="/assets/images/{{ image.src }}" alt="{{ image.alt }}" class="worksSection__item__image">
+                  <img src="./assets/images/{{ image.src }}" alt="{{ image.alt }}" class="worksSection__item__image">
                 {% endfor %}
               </div>
               <div class="worksSection__item_team">
