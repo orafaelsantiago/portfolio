@@ -1,0 +1,71 @@
+{% assign home = site.data.home %}
+{% assign footer = site.data.home.footer %}
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
+  <body>
+    <section class="homeSection">
+      <div class="content">
+        <h1 class="homeSection__title">{{ home.title_1 }}</h1>
+        <h1 class="homeSection__title homeSection__title--last">{{ home.title_2 }}</h1>
+        <button class="homeSection__arrowDown"></button>
+      </div>
+    </section>
+    <section class="worksSection">
+      <div class="content">
+        <ul class="worksSection__wrapItens">
+          {% for project in site.data.projects %}
+            <li class="worksSection__item">
+              <div class="worksSection__item_info">
+                <div class="worksSection__item_infoSection">
+                  <h2 class="worksSection__item__name">{{ project.name }}</h2>
+                  <p class="worksSection__item__work">{{ project.work }}</p>
+                </div>
+                <div class="worksSection__item_infoSection">
+                  {% for paragraphs in project.description %}
+                    <p class="worksSection__item__description">{{ paragraphs }}</p>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="worksSection__item__wrapImages">
+                {% for image in project.images %}
+                  <div class="worksSection__item__wrapGroupImages">
+                  {% for groupImg in image.imageGroup %}
+                    <img src="../assets/images/{{ groupImg.src }}" alt="{{ groupImg.alt }}" class="worksSection__item__image">
+                  {% endfor %}
+                  </div>
+                  <img src="../assets/images/{{ image.src }}" alt="{{ image.alt }}" class="worksSection__item__image">
+                {% endfor %}
+              </div>
+              <div class="worksSection__item_team">
+                <ul class="worksSection__item_wrapTeamMember">
+                  {% for teamMember in project.team %}
+                    <li class="worksSection__item_teamMember">{{ teamMember }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+    <footer class="footerSection">
+      <div class="content">
+        <div class="footerSection__copyright">{{ footer.copyright }}</div>
+        <ul class="footerSection__menu">
+          {% for link in home.footer.menu %}
+            <li class="footerSection__menu_item">
+              <a href="{{ link.src }}" class="footerSection__menu_itemLink">{{ link.label }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

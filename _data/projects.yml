@@ -1,0 +1,67 @@
+- name: Wish Resorts
+  work: Design Concept
+  description:
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+  images:
+    - src: work-01.png
+      alt: 'alt text'
+    - src: work-01.png
+  team:
+    - Matt  Hallock
+    - Estee  Kim
+    - Dongkyu  Lee
+    - Alex  Greene
+    - Jaimie  Geier
+    - Amy  Dawes
+    - Keilor  Aguilar
+    - Marissa  Traina
+    - Oneil  Olonade
+
+- name: Bonafont
+  work: Mobile Design
+  description:
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+  images:
+    - src: work-01.png
+      alt: 'alt text'
+    - imageGroup:
+      - src: work-02.png
+        alt: 'alt text'
+      - src: work-02.png
+        alt: 'alt text'
+  team:
+    - Matt  Hallock
+    - Estee  Kim
+    - Dongkyu  Lee
+    - Alex  Greene
+    - Jaimie  Geier
+    - Amy  Dawes
+    - Keilor  Aguilar
+    - Marissa  Traina
+    - Oneil  Olonade
+
+- name: C&A
+  work: E-commerce<br>mobile
+  description:
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+  images:
+    - src: work-01.png
+      alt: 'alt text'
+    - src: work-01.png
+      alt: 'alt text'
+  team:
+    - Matt  Hallock
+    - Estee  Kim
+    - Dongkyu  Lee
+    - Alex  Greene
+    - Jaimie  Geier
+    - Amy  Dawes
+    - Keilor  Aguilar
+    - Marissa  Traina
+    - Oneil  Olonade
