@@ -1,0 +1,1 @@
+jekyll build && cp -a ./_site/ ./docs/ && rm -rf docs/docs
